@@ -14,7 +14,7 @@ function StartScreen({ numQuestions, dispatch }) {
   const handleQuizSelection = quizName => {
     async function fetchQuizData() {
       try {
-        const response = await fetch(`http://localhost:8000/${quizName}`);
+        const response = await fetch(`http://localhost:9000/${quizName}`);
         const data = await response.json();
         dispatch({ type: 'dataReceived', payload: { data, quizName } });
       } catch (error) {
@@ -52,7 +52,7 @@ function StartScreen({ numQuestions, dispatch }) {
         >
           <div className="tech-logo-container">
             <img
-              src="/logos/javaScript.png"
+              src="/logos/javascript.png"
               alt="JavaScript Logo"
               className="tech-logo"
             />
