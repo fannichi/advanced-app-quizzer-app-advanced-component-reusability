@@ -14,7 +14,11 @@ function StartScreen({ numQuestions, dispatch }) {
   const handleQuizSelection = quizName => {
     async function fetchQuizData() {
       try {
-        const response = await fetch(`http://localhost:9000/${quizName}`);
+        const response = await fetch(
+          process.env.NODE_ENV === 'production'
+            ? `/${quizName}`
+            : `http://localhost:5000/${quizName}`
+        );
         const data = await response.json();
         dispatch({ type: 'dataReceived', payload: { data, quizName } });
       } catch (error) {
