@@ -9,6 +9,7 @@ import Progress from './Progress';
 import Question from './Question';
 import StartScreen from './StartScreen';
 import Timer from './Timer';
+import Confetti from 'react-confetti';
 
 const initialState = {
   questions: [],
@@ -137,12 +138,21 @@ function App() {
           </>
         )}
         {status === 'finished' && (
-          <FinishScreen
-            points={points}
-            maxPossiblePoints={maxPossiblePoints}
-            highScore={highScore}
-            dispatch={dispatch}
-          />
+          <>
+            <FinishScreen
+              points={points}
+              maxPossiblePoints={maxPossiblePoints}
+              highScore={highScore}
+              dispatch={dispatch}
+            />
+            {points > 200 && (
+              <Confetti
+                numberOfPieces={300}
+                gravity={0.2}
+                colors={['#ff6b6b', '#feca57', '#54a0ff', '#00d2d3']}
+              />
+            )}
+          </>
         )}
       </Main>
       <em>By youssef fannichi&copy;</em>
