@@ -1,0 +1,1885 @@
+{
+  "react": [
+    {
+      "question": "Which is the most popular JavaScript framework?",
+      "options": ["Angular", "React", "Svelte", "Vue"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which company invented React?",
+      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What's the fundamental building block of React apps?",
+      "options": ["Components", "Blocks", "Elements", "Effects"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What's the name of the syntax we use to describe the UI in React components?",
+      "options": ["FBJ", "Babel", "JSX", "ES2015"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How does data flow naturally in React apps?",
+      "options": [
+        "From parents to children",
+        "From children to parents",
+        "Both ways",
+        "The developers decides"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How to pass data into a child component?",
+      "options": ["State", "Props", "PropTypes", "Parameters"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "When to use derived state?",
+      "options": [
+        "Whenever the state should not trigger a re-render",
+        "Whenever the state can be synchronized with an effect",
+        "Whenever the state should be accessible to all components",
+        "Whenever the state can be computed from another state variable"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "What triggers a UI re-render in React?",
+      "options": [
+        "Running an effect",
+        "Passing props",
+        "Updating state",
+        "Adding event listeners to DOM elements"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "When do we directly \"touch\" the DOM in React?",
+      "options": [
+        "When we need to listen to an event",
+        "When we need to change the UI",
+        "When we need to add styles",
+        "Almost never"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "In what situation do we use a callback to update state?",
+      "options": [
+        "When updating the state will be slow",
+        "When the updated state is very data-intensive",
+        "When the state update should happen faster",
+        "When the new state depends on the previous state"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "If we pass a function to useState, when will that function be called?",
+      "options": [
+        "On each re-render",
+        "Each time we update the state",
+        "Only on the initial render",
+        "The first time we update the state"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Which hook to use for an API request on the component's initial render?",
+      "options": ["useState", "useEffect", "useRef", "useReducer"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which variables should go into the useEffect dependency array?",
+      "options": [
+        "Usually none",
+        "All our state variables",
+        "All state and props referenced in the effect",
+        "All variables needed for clean up"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "An effect will always run on the initial render.",
+      "options": [
+        "True",
+        "It depends on the dependency array",
+        "False",
+        "In depends on the code in the effect"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "When will an effect run if it doesn't have a dependency array?",
+      "options": [
+        "Only when the component mounts",
+        "Only when the component unmounts",
+        "The first time the component re-renders",
+        "Each time the component is re-rendered"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What is a Pure Component in React?",
+      "options": [
+        "A component that doesn't have any state",
+        "A component that renders the same output for the same props and state",
+        "A component that only uses class-based components",
+        "A component that updates on every render"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between useEffect and useLayoutEffect?",
+      "options": [
+        "useEffect runs synchronously, useLayoutEffect runs asynchronously",
+        "useEffect runs after the render, useLayoutEffect runs before the render is painted",
+        "useEffect runs in the same phase as useMemo, useLayoutEffect runs in the commit phase",
+        "There is no difference between the two hooks"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the React Profiler API?",
+      "options": [
+        "To profile the performance of the entire application",
+        "To log errors that occur in React components",
+        "To measure the performance of React components",
+        "To manage the state of React components"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "How can you optimize a large list in React?",
+      "options": [
+        "By using the setState hook",
+        "By using useEffect with a dependency array",
+        "By using the useMemo hook",
+        "By using windowing libraries like react-window or react-virtualized"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What does React.StrictMode do?",
+      "options": [
+        "It automatically fixes common React bugs",
+        "It helps to identify potential problems in an application by activating additional checks",
+        "It disables React lifecycle methods",
+        "It allows developers to use experimental React features"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What are React Portals?",
+      "options": [
+        "A way to add React components into DOM nodes outside of the main DOM hierarchy",
+        "A way to render a component without a parent component",
+        "A method to optimize component rendering",
+        "A feature to teleport React components between different React trees"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the significance of the key prop in React?",
+      "options": [
+        "It is used to determine the uniqueness of React elements",
+        "It is used to set a value for the component",
+        "It binds state to an element",
+        "It changes the behavior of the element"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does lazy loading in React do?",
+      "options": [
+        "It delays the rendering of components until they are needed",
+        "It loads all components simultaneously",
+        "It pre-fetches components for faster access",
+        "It stores components in the cache for reuse"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useReducer hook in React?",
+      "options": [
+        "It manages global state for an entire application",
+        "It provides a way to lazy-load components",
+        "It helps manage more complex state logic compared to useState",
+        "It handles asynchronous data fetching"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "Which lifecycle method would you use to fetch data in a class component?",
+      "options": [
+        "componentDidUpdate",
+        "componentDidMount",
+        "shouldComponentUpdate",
+        "componentWillUnmount"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "How do you prevent unnecessary re-renders in a functional component?",
+      "options": [
+        "By using useState",
+        "By using React.memo",
+        "By using useEffect",
+        "By using setState"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is React Fiber?",
+      "options": [
+        "A feature to manage styles in React",
+        "A new rendering engine in React to optimize the rendering process",
+        "A tool for debugging React applications",
+        "A library to manage component trees"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What is the difference between controlled and uncontrolled components in React?",
+      "options": [
+        "Controlled components manage their own state, while uncontrolled components rely on refs",
+        "Controlled components rely on refs, while uncontrolled components manage their own state",
+        "Controlled components store their value in the DOM, while uncontrolled components store it in the state",
+        "Controlled components manage state via props, while uncontrolled components do not manage state"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What is the purpose of the useRef hook in React?",
+      "options": [
+        "To handle asynchronous data fetching",
+        "To access and manipulate DOM elements directly",
+        "To manage global state",
+        "To prevent re-renders in the component"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "When should you use the `useCallback` hook in React?",
+      "options": [
+        "When you want to memoize an expensive computation",
+        "When you want to avoid re-creating a function unless its dependencies change",
+        "When you need to create a function that runs only once",
+        "When you want to prevent the re-rendering of a component"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What is the purpose of error boundaries in React?",
+      "options": [
+        "To catch errors in the entire application",
+        "To catch JavaScript errors in child components and display fallback UI",
+        "To handle errors in state updates",
+        "To handle errors related to API requests"
+      ],
+      "correctOption": 1,
+      "points": 20
+    }
+  ],
+  "javascript": [
+    {
+      "question": "Which of the following is a primitive data type in JavaScript?",
+      "options": ["Object", "Array", "Boolean", "Function"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to parse a JSON string into a JavaScript object?",
+      "options": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "JSON.decode()",
+        "JSON.objectify()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to declare a constant in JavaScript?",
+      "options": ["var", "let", "const", "static"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the output of 'typeof null' in JavaScript?",
+      "options": ["null", "undefined", "object", "string"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How can you convert a string to an integer in JavaScript?",
+      "options": ["parseInt()", "toInteger()", "parse()", "convert()"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which array method is used to add elements to the end of an array?",
+      "options": ["push()", "pop()", "shift()", "unshift()"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a looping structure in JavaScript?",
+      "options": ["for", "while", "foreach", "loop"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How can you create a new object in JavaScript?",
+      "options": [
+        "object()",
+        "new Object()",
+        "create Object()",
+        "Object.create()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the result of '2' + 2 in JavaScript?",
+      "options": ["4", "'22'", "Error", "'4'"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a JavaScript data type?",
+      "options": ["Null", "Undefined", "Number", "Character"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you declare an arrow function in JavaScript?",
+      "options": [
+        "function() => {}",
+        "() => {}",
+        "=> function() {}",
+        "() -> {}"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to remove the last element of an array?",
+      "options": ["push()", "pop()", "slice()", "shift()"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'this' keyword in JavaScript?",
+      "options": [
+        "To refer to the current function",
+        "To refer to the global object",
+        "To refer to the current object",
+        "To refer to a new object"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is a closure in JavaScript?",
+      "options": [
+        "A function inside another function",
+        "A loop inside a function",
+        "A function that has access to its outer scope",
+        "An object inside a function"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does the '===' operator do in JavaScript?",
+      "options": [
+        "Checks for equality of value",
+        "Checks for equality of type",
+        "Checks for equality of value and type",
+        "Checks for equality of reference"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'let' keyword in JavaScript?",
+      "options": [
+        "To declare a constant",
+        "To declare a function",
+        "To declare a block-scoped variable",
+        "To declare a global variable"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you prevent a form from submitting in JavaScript?",
+      "options": [
+        "return false;",
+        "return true;",
+        "event.preventDefault();",
+        "stopPropagation();"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a falsy value in JavaScript?",
+      "options": ["1", "'false'", "0", "[]"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you create a promise in JavaScript?",
+      "options": [
+        "new Promise()",
+        "Promise.new()",
+        "create Promise()",
+        "Promise.create()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does async/await in JavaScript do?",
+      "options": [
+        "Pauses the execution of a function",
+        "Waits for a function to finish",
+        "Makes a function asynchronous",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you convert a JavaScript object to a JSON string?",
+      "options": [
+        "JSON.stringify()",
+        "JSON.parse()",
+        "JSON.objectify()",
+        "JSON.toString()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is hoisting in JavaScript?",
+      "options": [
+        "Lifting variables to the top of their scope",
+        "Lifting functions to the top of their scope",
+        "Both variables and functions are hoisted",
+        "Only function declarations are hoisted"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which statement creates a new array in JavaScript?",
+      "options": ["var arr = []", "var arr = {}", "newArray arr", "Array arr"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the default return value of a function that doesn't explicitly return anything?",
+      "options": ["undefined", "null", "0", "false"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How can you add a property to an object in JavaScript?",
+      "options": [
+        "object.newProp = value",
+        "object[value] = newProp",
+        "object.value = newProp",
+        "object[newProp] = value"
+      ],
+      "correctOption": 3,
+      "points": 10
+    }
+  ],
+  "python": [
+    {
+      "question": "Which keyword is used to define a function in Python?",
+      "options": ["function", "func", "def", "lambda"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the output of `len([1, 2, 3])`?",
+      "options": ["2", "3", "4", "error"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you define a block of code in Python?",
+      "options": [
+        "Using curly braces {}",
+        "Using indentation",
+        "Using parentheses ()",
+        "Using square brackets []"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the output of 3 * 'Python'?",
+      "options": ["Error", "'Python3'", "'PythonPythonPython'", "'Python 3'"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is a correct syntax to import a module in Python?",
+      "options": [
+        "import(module)",
+        "import module",
+        "include module",
+        "module.import()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a mutable data type in Python?",
+      "options": ["tuple", "int", "list", "str"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the result of `2 ** 3` in Python?",
+      "options": ["6", "8", "Error", "None"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you handle exceptions in Python?",
+      "options": ["try-except", "try-catch", "try-finally", "catch-except"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is not a valid Python data type?",
+      "options": ["dict", "tuple", "set", "array"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you create a set in Python?",
+      "options": ["set = {}", "set = ()", "set = []", "set()"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'self' keyword in a Python class?",
+      "options": [
+        "To define a method",
+        "To access instance variables",
+        "To declare a class variable",
+        "To return an object"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you check if a key exists in a Python dictionary?",
+      "options": [
+        "key in dict",
+        "dict.key",
+        "dict.has_key(key)",
+        "exists(key)"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does `is` keyword check in Python?",
+      "options": [
+        "Equality of values",
+        "Equality of types",
+        "Identity of objects",
+        "Membership in a list"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is a generator in Python?",
+      "options": [
+        "A function that yields values",
+        "A loop that never ends",
+        "A function that returns multiple values",
+        "A class that generates objects"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you create a lambda function in Python?",
+      "options": [
+        "def lambda:",
+        "lambda x: x + 1",
+        "lambda = x => x + 1",
+        "lambda x => x + 1"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you sort a list in Python?",
+      "options": ["list.sort()", "sort(list)", "sorted(list)", "list.order()"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you concatenate strings in Python?",
+      "options": [
+        "str1 + str2",
+        "concat(str1, str2)",
+        "str1.append(str2)",
+        "join(str1, str2)"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between a tuple and a list in Python?",
+      "options": [
+        "Lists are mutable, tuples are immutable",
+        "Lists are faster",
+        "Tuples are larger",
+        "There is no difference"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method can be used to iterate over a list with both the index and value?",
+      "options": ["list.enumerate()", "for-in", "forEach()", "enumerate()"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the use of the pass statement in Python?",
+      "options": [
+        "To end a loop",
+        "To return None",
+        "To do nothing",
+        "To raise an error"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to create a class in Python?",
+      "options": ["class", "def", "object", "function"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the output of `print(2 == 2.0)` in Python?",
+      "options": ["True", "False", "Error", "None"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the built-in `zip()` function do?",
+      "options": [
+        "Combines two lists into a dictionary",
+        "Combines elements of two lists into tuples",
+        "Sorts two lists",
+        "Removes duplicates from a list"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the correct syntax to open a file in Python?",
+      "options": [
+        "open(file)",
+        "file.open()",
+        "open(file, 'r')",
+        "file = open(file)"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the default value of a function argument in Python?",
+      "options": ["None", "False", "0", "Empty string"],
+      "correctOption": 0,
+      "points": 10
+    }
+  ],
+  "java": [
+    {
+      "question": "Which keyword is used to define a class in Java?",
+      "options": ["class", "Class", "define", "public"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the default value of a boolean variable in Java?",
+      "options": ["true", "false", "0", "null"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which data type is used to create a variable that should store text in Java?",
+      "options": ["char", "String", "text", "word"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you create a new object in Java?",
+      "options": [
+        "new Object()",
+        "create Object()",
+        "Object()",
+        "Object.new()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to start a thread in Java?",
+      "options": ["startThread()", "run()", "start()", "execute()"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the parent class of all Java classes?",
+      "options": ["Object", "Class", "Main", "Core"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to get the length of an array in Java?",
+      "options": ["size()", "length()", "getSize()", "arraySize()"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of these is a valid access modifier in Java?",
+      "options": ["static", "private", "abstract", "final"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to inherit a class in Java?",
+      "options": ["extend", "extends", "inherit", "super"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does the 'final' keyword do in Java?",
+      "options": [
+        "Makes a variable immutable",
+        "Overrides a method",
+        "Creates a subclass",
+        "Stops inheritance"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is called when an object is garbage collected in Java?",
+      "options": ["finalize()", "destroy()", "dispose()", "end()"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the correct way to implement an interface in Java?",
+      "options": ["extends", "inherits", "implements", "uses"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the output of 5 % 2 in Java?",
+      "options": ["2", "2.5", "1", "5"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a wrapper class in Java?",
+      "options": ["int", "float", "boolean", "Integer"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which loop will always execute at least once in Java?",
+      "options": [
+        "for loop",
+        "while loop",
+        "do-while loop",
+        "none of the above"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is used to serialize an object in Java?",
+      "options": [
+        "implements Serializable",
+        "implements serial",
+        "extends Serializable",
+        "extends Object"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of these is not a valid variable name in Java?",
+      "options": ["_var", "$var", "123var", "var123"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is polymorphism in Java?",
+      "options": [
+        "Inheritance",
+        "Ability to take many forms",
+        "Static binding",
+        "Overloading"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which statement is used to exit a loop in Java?",
+      "options": ["exit", "end", "break", "continue"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you handle exceptions in Java?",
+      "options": ["try-catch", "throw-catch", "try-finally", "try-except"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to compare two strings in Java?",
+      "options": ["compare()", "equals()", "compareTo()", "isEqual()"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you declare an array in Java?",
+      "options": ["int[] arr", "arr int[]", "int arr[]", "arr = new int[]"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of these is not a valid loop structure in Java?",
+      "options": ["for loop", "while loop", "repeat loop", "do-while loop"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to find the length of a string in Java?",
+      "options": ["size()", "length()", "getSize()", "stringLength()"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is a constructor in Java?",
+      "options": [
+        "A method to initialize an object",
+        "A class",
+        "A data type",
+        "A static method"
+      ],
+      "correctOption": 0,
+      "points": 10
+    }
+  ],
+  "csharp": [
+    {
+      "question": "Which keyword is used to declare a class in C#?",
+      "options": ["class", "Class", "define", "public"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the default value of a boolean variable in C#?",
+      "options": ["true", "false", "0", "null"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which data type is used to store text in C#?",
+      "options": ["char", "String", "text", "word"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you instantiate a new object in C#?",
+      "options": [
+        "new Object()",
+        "create Object()",
+        "Object()",
+        "Object.new()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to start a thread in C#?",
+      "options": ["startThread()", "run()", "start()", "execute()"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to define an interface in C#?",
+      "options": ["interface", "implements", "extends", "inherit"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to determine the length of a string in C#?",
+      "options": ["size()", "length()", "Length", "stringLength()"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is encapsulation in C#?",
+      "options": [
+        "Binding code and data",
+        "Creating new classes",
+        "Allowing polymorphism",
+        "Calling methods"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to inherit a class in C#?",
+      "options": ["extends", "implements", "inherits", "None"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of these is not a valid access modifier in C#?",
+      "options": ["public", "private", "protected", "final"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which method is called when an object is garbage collected in C#?",
+      "options": ["finalize()", "destroy()", "dispose()", "end()"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to prevent a class from being inherited in C#?",
+      "options": ["sealed", "final", "static", "None"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which loop will always execute at least once in C#?",
+      "options": ["for loop", "while loop", "do-while loop", "none"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the output of 10 % 3 in C#?",
+      "options": ["3", "1", "10", "0"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a reference type in C#?",
+      "options": ["int", "float", "string", "char"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to handle exceptions in C#?",
+      "options": ["catch()", "try()", "handle()", "try-catch"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a value type in C#?",
+      "options": ["String", "Array", "int", "Object"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you create an array in C#?",
+      "options": ["int[] arr", "arr int[]", "int arr[]", "arr = new int[]"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of 'this' keyword in C#?",
+      "options": [
+        "Refers to current instance",
+        "Refers to parent class",
+        "Refers to method",
+        "Refers to namespace"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to define a constant in C#?",
+      "options": ["static", "final", "const", "readonly"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is used to stop a loop in C#?",
+      "options": ["stop", "end", "break", "terminate"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is polymorphism in C#?",
+      "options": [
+        "Inheritance",
+        "Encapsulation",
+        "Overriding methods",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of these is a collection class in C#?",
+      "options": ["List", "Array", "Queue", "Dictionary"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which loop structure repeats until a specified condition is met in C#?",
+      "options": ["for", "while", "do-while", "None"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is an interface in C#?",
+      "options": ["Defines methods", "Defines classes", "Defines data", "None"],
+      "correctOption": 0,
+      "points": 10
+    }
+  ],
+  "cpp": [
+    {
+      "question": "Which operator is used to create objects in C++?",
+      "options": ["new", "malloc", "alloc", "Object"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to define a class in C++?",
+      "options": ["class", "Class", "struct", "public"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the default access modifier in a class in C++?",
+      "options": ["private", "protected", "public", "None"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a valid data type in C++?",
+      "options": ["str", "int", "num", "None"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of these is a valid destructor for the class MyClass?",
+      "options": ["~MyClass", "MyClass~", "delete MyClass", "free MyClass"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is polymorphism in C++?",
+      "options": [
+        "Overloading methods",
+        "Inheritance",
+        "Ability to take many forms",
+        "Static binding"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a valid variable name in C++?",
+      "options": ["2var", "_var", "var 2", "None"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the output of 5 % 2 in C++?",
+      "options": ["2", "2.5", "1", "5"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to inherit a class in C++?",
+      "options": ["extends", "inherits", "uses", "None"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which method is called when an object is garbage collected in C++?",
+      "options": ["finalize()", "delete()", "dispose()", "free()"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to create a constant in C++?",
+      "options": ["static", "final", "const", "None"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of these is a valid access modifier in C++?",
+      "options": ["static", "protected", "final", "None"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which loop will always execute at least once in C++?",
+      "options": ["for loop", "while loop", "do-while loop", "None"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the correct way to include a header file in C++?",
+      "options": [
+        "#include <filename>",
+        "include filename",
+        "import filename",
+        "#import <filename>"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you declare an array in C++?",
+      "options": ["int[] arr", "arr int[]", "int arr[]", "arr = new int[]"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the use of 'this' keyword in C++?",
+      "options": [
+        "Refers to current instance",
+        "Refers to parent class",
+        "Refers to method",
+        "Refers to namespace"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a reference type in C++?",
+      "options": ["int", "float", "std::string", "None"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you handle exceptions in C++?",
+      "options": ["try-catch", "throw()", "try-finally", "catch-except"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of these is not a valid operator in C++?",
+      "options": ["+", "-", "*", "&"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of these is not a valid variable name in C++?",
+      "options": ["var_1", "$var", "_var", "None"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is inheritance in C++?",
+      "options": [
+        "Binding code and data",
+        "Creating new classes",
+        "Ability of class to inherit properties",
+        "None"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to check if a string is empty in C++?",
+      "options": ["empty()", "size()", "length()", "None"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the use of 'namespace' in C++?",
+      "options": [
+        "Groups code",
+        "Organizes data",
+        "Avoids name conflicts",
+        "None"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to break a loop in C++?",
+      "options": ["end()", "break()", "stop()", "None"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of these is a valid loop structure in C++?",
+      "options": ["for loop", "while loop", "do-while loop", "All"],
+      "correctOption": 3,
+      "points": 10
+    }
+  ],
+  "html": [
+    {
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hypertext Markup Language",
+        "Hypertext Media Language",
+        "Hyperlink Markup Language",
+        "Hyperlink Media Language"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to create a hyperlink in HTML?",
+      "options": ["<link>", "<a>", "<href>", "<hyperlink>"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to create a paragraph in HTML?",
+      "options": ["<p>", "<paragraph>", "<para>", "<text>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the correct way to specify a background color for an HTML element?",
+      "options": [
+        "<body bg='blue'>",
+        "<body bgcolor='blue'>",
+        "<body style='background-color:blue;'>",
+        "<background color='blue'>"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to display an image in HTML?",
+      "options": ["<image>", "<img>", "<pic>", "<picture>"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the correct HTML tag for the largest heading?",
+      "options": ["<heading>", "<h1>", "<h6>", "<header>"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the default alignment for text in HTML?",
+      "options": ["left", "center", "right", "justify"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which HTML tag is used to create an unordered list?",
+      "options": ["<ul>", "<ol>", "<li>", "<list>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you create a numbered list in HTML?",
+      "options": ["<ul>", "<ol>", "<li>", "<list>"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does the <br> tag in HTML do?",
+      "options": [
+        "Creates a break between two paragraphs",
+        "Creates a blank space",
+        "Creates a line break",
+        "Creates a tab space"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which attribute is used to define the URL of an image in an <img> tag?",
+      "options": ["alt", "src", "href", "link"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to define a table in HTML?",
+      "options": ["<table>", "<tbl>", "<td>", "<tr>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which HTML tag is used to define a row in a table?",
+      "options": ["<tr>", "<td>", "<table-row>", "<row>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to create a form in HTML?",
+      "options": ["<form>", "<input>", "<textarea>", "<fieldset>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which attribute is used to define the method for a form in HTML?",
+      "options": ["method", "type", "submit", "send"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which input type is used to create a radio button in HTML?",
+      "options": ["radio", "checkbox", "button", "text"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to create a dropdown list in HTML?",
+      "options": ["<dropdown>", "<select>", "<option>", "<input>"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to create a checkbox in HTML?",
+      "options": [
+        "<input type='checkbox'>",
+        "<checkbox>",
+        "<check>",
+        "<input type='check'>"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the correct way to create a comment in HTML?",
+      "options": [
+        "<!-- This is a comment -->",
+        "// This is a comment",
+        "/* This is a comment */",
+        "# This is a comment"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which attribute is used to specify a unique identifier for an HTML element?",
+      "options": ["class", "id", "name", "tag"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a semantic HTML element?",
+      "options": ["<div>", "<section>", "<span>", "<header>"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does the <meta> tag do in HTML?",
+      "options": [
+        "Adds metadata to a document",
+        "Creates a hyperlink",
+        "Includes a script",
+        "Defines styles"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to link an external CSS file to an HTML document?",
+      "options": ["<link>", "<style>", "<css>", "<script>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to include JavaScript in an HTML document?",
+      "options": ["<js>", "<script>", "<javascript>", "<code>"],
+      "correctOption": 1,
+      "points": 10
+    }
+  ],
+  "angular": [
+    {
+      "question": "What is Angular?",
+      "options": [
+        "A framework for building web apps",
+        "A library for building web apps",
+        "A database management system",
+        "A CSS framework"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which directive is used for two-way data binding in Angular?",
+      "options": ["[(ngModel)]", "[ngModel]", "(ngModel)", "ngBind"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is a component in Angular?",
+      "options": [
+        "A part of a module",
+        "A class with a decorator",
+        "A directive",
+        "A service"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the root module of an Angular application?",
+      "options": ["app.module.ts", "index.html", "main.ts", "app.component.ts"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which command is used to create a new Angular project?",
+      "options": ["ng generate", "ng new", "ng create", "ng init"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is a service in Angular?",
+      "options": [
+        "A function that returns HTML",
+        "A class that contains business logic",
+        "A database connection",
+        "A directive for forms"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which lifecycle hook is called after the constructor in Angular?",
+      "options": ["ngOnInit", "ngOnChanges", "ngAfterViewInit", "ngDoCheck"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which Angular feature is used to manage the navigation between views?",
+      "options": ["Directives", "Pipes", "Routing", "Services"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which command is used to build an Angular project?",
+      "options": ["ng build", "ng compile", "ng make", "ng create"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you define a custom pipe in Angular?",
+      "options": ["@Pipe", "@Directive", "@CustomPipe", "@NgPipe"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'ngIf' directive in Angular?",
+      "options": [
+        "To create a loop",
+        "To apply a CSS class",
+        "To conditionally render elements",
+        "To bind a property"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is 'Dependency Injection' in Angular?",
+      "options": [
+        "Passing data between components",
+        "A design pattern for resolving dependencies",
+        "A lifecycle hook",
+        "A routing method"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does the 'ngFor' directive do in Angular?",
+      "options": [
+        "It binds data",
+        "It iterates over an array",
+        "It creates a form",
+        "It imports a module"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which Angular service is used for sending HTTP requests?",
+      "options": ["HttpClient", "HttpService", "HttpModule", "HttpRequest"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which file contains the main configuration for an Angular project?",
+      "options": [
+        "angular.json",
+        "package.json",
+        "tsconfig.json",
+        "config.json"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is 'Lazy Loading' in Angular?",
+      "options": [
+        "Loading all modules at once",
+        "Loading modules only when needed",
+        "Loading services after components",
+        "Loading directives lazily"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is a 'Directive' in Angular?",
+      "options": [
+        "A decorator",
+        "A class",
+        "A component",
+        "A special instruction to the DOM"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which pipe is used to format dates in Angular?",
+      "options": ["datePipe", "timePipe", "currencyPipe", "asyncPipe"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you apply CSS styles conditionally in Angular?",
+      "options": ["ngIf", "[ngStyle]", "[ngClass]", "[ngBind]"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does 'ngModel' do in Angular?",
+      "options": [
+        "It binds properties",
+        "It binds forms to models",
+        "It binds attributes",
+        "It creates new modules"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is 'AOT' in Angular?",
+      "options": [
+        "Ahead of Time Compilation",
+        "After Output Task",
+        "Angular Optimization Task",
+        "All Objects Together"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which Angular CLI command is used to serve the project locally?",
+      "options": ["ng serve", "ng start", "ng open", "ng run"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you define routes in an Angular application?",
+      "options": [
+        "Using RouterModule",
+        "Using HttpClient",
+        "Using RouteService",
+        "Using RouterService"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which directive is used to handle forms in Angular?",
+      "options": ["ngModel", "ngForm", "ngSubmit", "ngFormSubmit"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which lifecycle hook is used to perform cleanup in Angular?",
+      "options": ["ngOnDestroy", "ngAfterViewInit", "ngOnInit", "ngOnChanges"],
+      "correctOption": 0,
+      "points": 10
+    }
+  ],
+  "css": [
+    {
+      "question": "What does CSS stand for?",
+      "options": [
+        "Cascading Style Sheets",
+        "Colorful Style Sheets",
+        "Computer Style Sheets",
+        "Creative Style Sheets"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which property is used to change the background color?",
+      "options": ["color", "background-color", "bgcolor", "background"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you make text bold in CSS?",
+      "options": [
+        "font-weight: bold;",
+        "text-decoration: bold;",
+        "font-style: bold;",
+        "font-bold: true;"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which property is used to change the font size?",
+      "options": ["font-size", "text-size", "font-style", "size"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you center a block element horizontally in CSS?",
+      "options": [
+        "margin: 0 auto;",
+        "text-align: center;",
+        "padding: 0 auto;",
+        "float: center;"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the default value of the `position` property in CSS?",
+      "options": ["static", "relative", "absolute", "fixed"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which CSS property controls the text color?",
+      "options": ["font-color", "text-color", "color", "style"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you add space inside an element's border in CSS?",
+      "options": ["padding", "margin", "border", "spacing"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is NOT a valid CSS length unit?",
+      "options": ["px", "em", "pt", "gram"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which property is used to create a shadow effect around an element?",
+      "options": ["shadow", "text-shadow", "box-shadow", "outline-shadow"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does the `z-index` property do?",
+      "options": [
+        "Changes the color depth",
+        "Changes the stack order of elements",
+        "Changes the width of elements",
+        "Changes the opacity of elements"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "How do you make an element invisible in CSS but still occupy space in the layout?",
+      "options": [
+        "visibility: hidden;",
+        "display: none;",
+        "opacity: 0;",
+        "invisible: true;"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you create rounded corners for an element?",
+      "options": [
+        "border-radius",
+        "corner-radius",
+        "border-style",
+        "box-corner"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the `flex` property used for in CSS?",
+      "options": [
+        "To create a flexible container",
+        "To add flexibility to animations",
+        "To create responsive images",
+        "To format text in flexible ways"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "Which CSS property is used to change the transparency of an element?",
+      "options": ["opacity", "visibility", "filter", "transparency"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the `:hover` pseudo-class used for in CSS?",
+      "options": [
+        "To style elements when clicked",
+        "To style elements when hovered over",
+        "To style elements when focused",
+        "To style active elements"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you apply CSS to all `p` elements inside a `div`?",
+      "options": ["div p", "div + p", "div > p", "div, p"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which property is used to change the spacing between lines of text?",
+      "options": [
+        "letter-spacing",
+        "line-height",
+        "text-spacing",
+        "word-spacing"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which CSS property is used to specify the space between an element's content and its border?",
+      "options": ["padding", "margin", "spacing", "border-spacing"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you make a list with no bullets in CSS?",
+      "options": [
+        "list-style-type: none;",
+        "text-decoration: none;",
+        "display: no-bullets;",
+        "list: no-bullets;"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the `display: inline-block;` property used for?",
+      "options": [
+        "To create inline elements that behave like block elements",
+        "To display elements on the same line",
+        "To hide block elements",
+        "To create floating elements"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What does `!important` do in CSS?",
+      "options": [
+        "Overrides all previous rules for that property",
+        "Disables a CSS rule",
+        "Specifies a priority level",
+        "Creates an inline style"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "Which CSS property would you use to align text to the right?",
+      "options": [
+        "text-align: right;",
+        "text-align: justify;",
+        "align-content: right;",
+        "float: right;"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you animate an element in CSS?",
+      "options": [
+        "Using the `animation` property",
+        "Using the `transition` property",
+        "Using both `animation` and `transition` properties",
+        "Using the `hover` property"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "Which property is used to control the order of a flex item in CSS?",
+      "options": ["order", "flex-order", "flex-position", "position-order"],
+      "correctOption": 0,
+      "points": 20
+    }
+  ]
+}
