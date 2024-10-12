@@ -15,12 +15,13 @@ function StartScreen({ numQuestions, dispatch }) {
     async function fetchQuizData() {
       try {
         const response = await fetch(
-          process.env.NODE_ENV === 'production'
-            ? `/${quizName}`
-            : `http://localhost:5000/${quizName}`
+          'https://run.mocky.io/v3/3f0457b9-7261-46ae-9889-35fe8aac87b2'
         );
         const data = await response.json();
-        dispatch({ type: 'dataReceived', payload: { data, quizName } });
+        dispatch({
+          type: 'dataReceived',
+          payload: { data: data[quizName], quizName },
+        });
       } catch (error) {
         dispatch({ type: 'dataFailed' });
       }
