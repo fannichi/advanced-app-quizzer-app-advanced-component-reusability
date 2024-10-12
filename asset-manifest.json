@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/advanced-reactapp-quizzer/static/css/main.6a2d4d23.css",
+    "main.js": "/advanced-reactapp-quizzer/static/js/main.aa327849.js",
+    "index.html": "/advanced-reactapp-quizzer/index.html",
+    "main.6a2d4d23.css.map": "/advanced-reactapp-quizzer/static/css/main.6a2d4d23.css.map",
+    "main.aa327849.js.map": "/advanced-reactapp-quizzer/static/js/main.aa327849.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a2d4d23.css",
+    "static/js/main.aa327849.js"
+  ]
+}
