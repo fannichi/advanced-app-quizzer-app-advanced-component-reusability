@@ -35,14 +35,16 @@ body {
 }
 
 .main {
-  width: 120rem;
+  width: 100%;
+  max-width: 120rem;
   border: 2px solid var(--color-dark);
   border-radius: 10px;
-  padding: 0px 40px 200px 40px;
+  padding: 20px 40px 200px 40px;
 }
 
 .app-header {
-  width: 66rem;
+  width: 100%;
+  max-width: 66rem;
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
@@ -119,11 +121,8 @@ h4 {
   background: linear-gradient(135deg, #121212, #1d1d1d);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
-  width: 100vw;
+  width: 100%;
   max-width: 1200px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   margin-bottom: 40px;
 }
 
@@ -145,15 +144,51 @@ h4 {
   animation: fadeInUp 2s ease-out;
 }
 
+/* Media query for tablet and mobile responsiveness */
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 20px;
+  }
+  .app-header {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  .start {
+    padding: 30px;
+    max-width: 90vw;
+  }
+  img {
+    width: 12rem;
+  }
+  .btn {
+    font-size: 1.8rem;
+    padding: 1.2rem 2.5rem;
+  }
+}
+
 /* Media query for mobile responsiveness */
 
 @media (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
   .main {
     width: 95%;
-    padding: 20px;
+    padding: 15px;
   }
   .app-header {
     width: 100%;
@@ -174,7 +209,7 @@ h4 {
     font-size: 1.8rem;
   }
   .start {
-    padding: 30px;
+    padding: 20px;
     max-width: 95vw;
   }
   .modal-content {
@@ -182,7 +217,7 @@ h4 {
     padding: 15px;
   }
   img {
-    width: 12rem;
+    width: 10rem;
   }
   .btn {
     font-size: 1.6rem;
