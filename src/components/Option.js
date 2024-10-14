@@ -1,3 +1,9 @@
+import correct from '../sounds/correct.wav';
+import wrong from '../sounds/wrong.mp3';
+
+const correctChoice = new Audio(correct);
+const wrongChoice = new Audio(wrong);
+
 function Option({ question, answer, dispatch }) {
   const isAnswer = answer !== null;
 
@@ -14,7 +20,14 @@ function Option({ question, answer, dispatch }) {
           }`}
           key={option}
           disabled={answer !== null}
-          onClick={() => dispatch({ type: 'newAnswer', payload: index })}
+          onClick={() => {
+            dispatch({ type: 'newAnswer', payload: index });
+            if (index === question.correctOption) {
+              correctChoice.play();
+            } else {
+              wrongChoice.play();
+            }
+          }}
         >
           {option}
           {isAnswer && index === question.correctOption && (
